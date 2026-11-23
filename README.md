@@ -8,9 +8,9 @@ This project compares two algorithms for computing sliding window medians on hea
 - Histogram + median pointer
 
 Correctness Tests
-python run_checks.py my_solutions.py --only quickselect,hist --labels small
-python run_checks.py my_solutions.py --only quickselect,hist --labels medium
-python run_checks.py my_solutions.py --only quickselect,hist --labels large
+-python run_checks.py my_solutions.py --only quickselect,hist --labels small
+-python run_checks.py my_solutions.py --only quickselect,hist --labels medium
+-python run_checks.py my_solutions.py --only quickselect,hist --labels large
 
 Benchmark
 python benchmark.py
