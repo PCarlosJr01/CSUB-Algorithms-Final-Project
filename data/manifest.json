@@ -1,0 +1,232 @@
+{
+  "project": "P7 Heart-Rate Median Filter (sliding-window median)",
+  "notes": "Each manifest entry = one (file, window length) pair; the same file appears several times with different w. There is exactly one correct output list per entry.",
+  "datasets": [
+    {
+      "file": "hr_n00060.csv",
+      "label": "small",
+      "n": 60,
+      "params": {
+        "w": 5
+      },
+      "suitable": [
+        "bf",
+        "quickselect",
+        "heaps",
+        "hist"
+      ],
+      "reference": {
+        "kind": "exact_output",
+        "n_medians": 56,
+        "first_10_medians": [
+          53,
+          53,
+          55,
+          55,
+          53,
+          57,
+          57,
+          56,
+          56,
+          56
+        ],
+        "min_median": 53,
+        "max_median": 73,
+        "raw_min": 51,
+        "raw_max": 155,
+        "all_medians": [
+          53,
+          53,
+          55,
+          55,
+          53,
+          57,
+          57,
+          56,
+          56,
+          56,
+          56,
+          56,
+          58,
+          58,
+          59,
+          59,
+          60,
+          61,
+          61,
+          62,
+          61,
+          62,
+          62,
+          62,
+          62,
+          62,
+          62,
+          63,
+          63,
+          64,
+          65,
+          66,
+          65,
+          65,
+          65,
+          65,
+          65,
+          67,
+          68,
+          68,
+          68,
+          68,
+          68,
+          69,
+          69,
+          70,
+          70,
+          71,
+          70,
+          70,
+          71,
+          72,
+          72,
+          72,
+          72,
+          73
+        ]
+      }
+    },
+    {
+      "file": "hr_n05000.csv",
+      "label": "medium",
+      "n": 5000,
+      "params": {
+        "w": 31
+      },
+      "suitable": [
+        "bf",
+        "quickselect",
+        "heaps",
+        "hist"
+      ],
+      "reference": {
+        "kind": "exact_output",
+        "n_medians": 4970,
+        "first_10_medians": [
+          52,
+          51,
+          51,
+          51,
+          51,
+          51,
+          51,
+          51,
+          50,
+          50
+        ],
+        "min_median": 45,
+        "max_median": 105,
+        "raw_min": 36,
+        "raw_max": 209
+      }
+    },
+    {
+      "file": "hr_n86400.csv",
+      "label": "large",
+      "n": 86400,
+      "params": {
+        "w": 31
+      },
+      "suitable": [
+        "bf",
+        "quickselect",
+        "heaps",
+        "hist"
+      ],
+      "reference": {
+        "kind": "exact_output",
+        "n_medians": 86370,
+        "first_10_medians": [
+          53,
+          53,
+          53,
+          53,
+          53,
+          52,
+          52,
+          52,
+          52,
+          52
+        ],
+        "min_median": 39,
+        "max_median": 151,
+        "raw_min": 35,
+        "raw_max": 210
+      }
+    },
+    {
+      "file": "hr_n86400.csv",
+      "label": "large",
+      "n": 86400,
+      "params": {
+        "w": 301
+      },
+      "suitable": [
+        "quickselect",
+        "heaps",
+        "hist"
+      ],
+      "reference": {
+        "kind": "exact_output",
+        "n_medians": 86100,
+        "first_10_medians": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "min_median": 41,
+        "max_median": 148,
+        "raw_min": 35,
+        "raw_max": 210
+      }
+    },
+    {
+      "file": "hr_n86400.csv",
+      "label": "large",
+      "n": 86400,
+      "params": {
+        "w": 1001
+      },
+      "suitable": [
+        "quickselect",
+        "heaps",
+        "hist"
+      ],
+      "reference": {
+        "kind": "exact_output",
+        "n_medians": 85400,
+        "first_10_medians": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "min_median": 46,
+        "max_median": 135,
+        "raw_min": 35,
+        "raw_max": 210
+      }
+    }
+  ]
+}
